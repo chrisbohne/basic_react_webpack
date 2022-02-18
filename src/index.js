@@ -1,3 +1,4 @@
-const hello = "hellooo";
+import ReactDom from "react-dom";
+import App from "./App";
 
-console.log(hello);
+ReactDom.render(<App />, document.getElementById("root"));
