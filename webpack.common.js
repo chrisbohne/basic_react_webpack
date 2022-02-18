@@ -8,6 +8,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"],
+      },
+      {
         test: /\.html$/,
         use: ["html-loader"],
       },
